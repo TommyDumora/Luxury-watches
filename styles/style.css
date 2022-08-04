@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: white;
+}
+
+body {
+    background: #24262A;
+}
+
+main {
+    position: relative;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding: 1.5em 10%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navigation-container {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    list-style: none;
+}
+
+
+.link a {
+    text-decoration: none;
+    color: #24262A;
+    font-size: 25px;
+}
+
+.burger-container {
+    height: 25px;
+    width: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger {
+    position: absolute;
+    height: 2px;
+    border-radius: 9px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.burger1 {
+    top: 0;
+    transition: all .3s ease;
+}
+
+.burger2 {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease;
+}
+
+.burger3 {
+    bottom: 0;
+    transition: all .3s ease;
+}
+
+.header-logo-link {
+    cursor: pointer;
+}
+
+.header-logo {
+    filter: invert(100%);
+    height: 90px;
+}
+
+.header-icons-container {
+    display: flex;
+    column-gap: 1.5em;
+}
+
+.header-user-icon-link {
+    cursor: pointer;
+}
+
+.header-user-icon,
+.header-cart-icon {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.change-color {
+    background: #121315d6;
+    transition: all .3s ease;
+}
+
+/* Back to top */
+
+.back-to-top {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    border-radius: 6px;
+}
+
+.back-to-top-arrow {
+    stroke: #24262A;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 2em 10%;
+    background: black;
+}
+
+.footer-container {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row-reverse;
+}
